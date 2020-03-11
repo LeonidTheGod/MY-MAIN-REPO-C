@@ -6,7 +6,7 @@
 /*   By: mbanh <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 11:10:30 by mbanh             #+#    #+#             */
-/*   Updated: 2020/03/09 10:21:59 by mbanh            ###   ########.fr       */
+/*   Updated: 2020/03/10 18:48:31 by mbanh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,9 +167,11 @@ void sastantua(int size)
     print_block_with_door(block_height, block_top_width, spaces, door_height);
     
 }
-int main()
+int main(int argc, char **argv)
 {
-    sastantua(7);
+    int i;
     
+    i = argv[1][0];
+    sastantua(i);
     return 0;
 }
